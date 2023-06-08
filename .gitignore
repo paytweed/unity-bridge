@@ -1,4 +1,5 @@
 unity-example
 node_modules
 fe/node_modules
-unity/example/*
+unity/example
+unity/example.tgz
