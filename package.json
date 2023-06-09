@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Unity wrapper to the JS SDK",
   "scripts": {
-    "inject": "./inject.sh",
+    "deploy": "./deploy.sh",
     "frontend": "npx vite ./fe",
     "backend": "nodemon be/src/index.js"
   },

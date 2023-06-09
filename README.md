@@ -6,7 +6,7 @@ npm install
 ```
 
 ```js
-npm inject
+npm deploy
 ```
 
 Now compile your webGL to ./deploy/tweed
@@ -43,7 +43,7 @@ The unity connector is build from two files:
 1. tweedJsSDK.jslib - The module that is forming the channel Unity -> Browser
 2. TweedUnityHandler.cs - The file that gives the Unity the Tweed functionality and gets the data from the browser (Browswer -> Unity)
 
-The inject.sh script will put the files in the right paths of the example.
+The deploy.sh script will put the files in the right paths of the example.
 
 # Architecture
 [TweedUnityHandler.cs] -> [tweedJsSDK.jslib] -> [tweedIntegration.js]   
