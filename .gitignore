@@ -1,5 +1,6 @@
 unity-example
 node_modules
 fe/node_modules
-unity/examples
+unity/example
+unity/example.tgz
 unity/deploy

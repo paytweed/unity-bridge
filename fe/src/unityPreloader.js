@@ -26,3 +26,7 @@ function getUnityInstance() {
 }
 
 window.getUnityInstance = getUnityInstance;
+
+if(!_unityInstance) {
+  console.log("Could not create Unity Instance, you should probably run npm deploy and compile your WebGL content")
+}
