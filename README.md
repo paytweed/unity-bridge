@@ -55,8 +55,5 @@ The deploy.sh script will put the files in the right paths of the example.
 [TweedUnityHandler.cs] -> [tweedJsSDK.jslib] -> [tweedIntegration.js]   
        [Unity]             [Unity-Browser]            [Browser]
 
-More info here: 
-https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
-https://docs.unity3d.com/Packages/com.unity.industrial.forma@3.0/manual/forma-js-api-devGuide.html
-
+More info here: https://docs.paytweed.com/unity-bridge/
 
