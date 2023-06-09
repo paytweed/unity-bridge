@@ -17,7 +17,6 @@ const frontendSDK = TweedFrontendSDK.setup({
 let _waiting = false;
 //Unified get or create wallet function
 export async function getOrCreateWallet(blockchainId) {
-  console.log("yyy" + blockchainId)
   if (!_waiting) {
     let address = "";
 

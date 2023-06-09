@@ -17,7 +17,6 @@ script.src = loaderUrl;
 script.onload = () =>
   createUnityInstance(canvas, config).then((unityInstance) => {
     _unityInstance = unityInstance;
-    console.log(_unityInstance);
   });
 document.body.appendChild(script);
 
