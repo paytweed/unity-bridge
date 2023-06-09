@@ -42,17 +42,17 @@ data - misc data that the app needs
 ## The frontend 
 The frontend is a vite project that imports two js files:
 1. unityPreloader.js - The file that fetches the unity files from the backend
-2. tweedIntegration.js - The file that setup the Tweed SDK and routes the calls from the unity to the SDK
+2. TweedSDK.js - The file that setup the Tweed SDK and routes the calls from the unity to the SDK
 
 ## The Unity connector
 The unity connector is build from two files: 
-1. tweedJsSDK.jslib - The module that is forming the channel Unity -> Browser
-2. TweedUnityHandler.cs - The file that gives the Unity the Tweed functionality and gets the data from the browser (Browswer -> Unity)
+1. TweedSDK.jslib - The module that is forming the channel Unity -> Browser
+2. TweedSDK.cs - The file that gives the Unity the Tweed functionality and gets the data from the browser (Browswer -> Unity)
 
 The deploy.sh script will put the files in the right paths of the example.
 
 # Architecture
-[TweedUnityHandler.cs] -> [tweedJsSDK.jslib] -> [tweedIntegration.js]   
+[TweedSDK.cs] -> [TweedSDK.jslib] -> [TweedSDK.js]   
        [Unity]             [Unity-Browser]            [Browser]
 
 More info here: https://docs.paytweed.com/unity-bridge/

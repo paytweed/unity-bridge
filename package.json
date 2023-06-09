@@ -7,7 +7,8 @@
     "deploy": "./deploy.sh",
     "frontend": "npx vite ./fe",
     "backend": "nodemon be/src/index.js",
-    "clean": "./clean.sh"
+    "clean": "./clean.sh",
+    "compress": "cd ./unity && tar -cvjf example.tar.bz2 ./example/* && split -b 50M example.tar.bz2 example.tar.bz2.part && rm -f example.tar.bz2"
   },
   "dependencies": {
     "@paytweed/backend-sdk": "^0.18.0",
