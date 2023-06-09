@@ -6,7 +6,8 @@
     "postinstall": "cd fe && npm install",
     "deploy": "./deploy.sh",
     "frontend": "npx vite ./fe",
-    "backend": "nodemon be/src/index.js"
+    "backend": "nodemon be/src/index.js",
+    "clean": "rm -Rf ./unity/deploy/ && rm -f ./fe/src/tweedIntegration && rm -Rf ./unity/example && rm -f ./unity/example.tgz"
   },
   "dependencies": {
     "@paytweed/backend-sdk": "^0.18.0",

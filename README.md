@@ -1,4 +1,8 @@
 # Tweed SDK Unity Example
+
+The files for the bridge can be found under the tweed_assets folder. 
+the deploy.sh script will put them in the right places, all you need to do is to compile the WebGL example.
+
 ## Using the Tweed-Unity SDK connector
 
 ```js
@@ -21,6 +25,8 @@ Run the FE:
 ```js
 npm run frontend
 ```
+
+In your browser go to http://localhost:5173/ to see the example
 
 ## The Backend
 The backend has two roles: 
