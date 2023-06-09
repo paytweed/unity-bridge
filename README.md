@@ -13,8 +13,8 @@ npm install
 npm deploy
 ```
 
-Now compile your webGL to ./deploy/tweed
-
+Open the unity example from: ./unity/example
+Compile to WebGL (file --> Build Settings... --> WebGL --> Build) to ./unity/deploy/tweed
 
 run the BE:
 ```js
@@ -26,7 +26,7 @@ Run the FE:
 npm run frontend
 ```
 
-In your browser go to http://localhost:5173/ to see the example
+Open the browser and hit http://localhost:5173/ to see the example running
 
 ## The Backend
 The backend has two roles: 
