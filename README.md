@@ -1,7 +1,7 @@
 # Tweed SDK Unity Example
 
-The files for the bridge can be found under the tweed_assets folder. 
-the deploy.sh script will put them in the right places, all you need to do is to compile the WebGL example.
+The files for the bridge can be found under the tweed_assets folder.
+the deploy.sh script will put them in the right places, all you need to do is to compile the WebGL example using Unity.
 
 ## Using the Tweed-Unity SDK connector
 
