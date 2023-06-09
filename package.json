@@ -7,7 +7,7 @@
     "deploy": "./deploy.sh",
     "frontend": "npx vite ./fe",
     "backend": "nodemon be/src/index.js",
-    "clean": "rm -Rf ./unity/deploy/ && rm -f ./fe/src/tweedIntegration && rm -Rf ./unity/example && rm -f ./unity/example.tgz && rm -Rf ./node_modules && rm -Rf ./fe/node_modules"
+    "clean": "rm -Rf ./unity/deploy/*/ && rm -f ./fe/src/tweedIntegration && rm -Rf ./unity/example && rm -f ./unity/example.tgz && rm -Rf ./node_modules && rm -Rf ./fe/node_modules"
   },
   "dependencies": {
     "@paytweed/backend-sdk": "^0.18.0",
