@@ -14,11 +14,11 @@ const frontendSDK = TweedFrontendSDK.setup({
   },
 });
 
-let _waiting = "";
+let _waiting = false;
 //Unified get or create wallet function
-export async function getOrCreateWallet() {
-  if (_waiting == "") {
-    console.log("Inside getOrCreateWallet");
+export async function getOrCreateWallet(blockchainId) {
+  console.log("yyy" + blockchainId)
+  if (!_waiting) {
     let address = "";
 
     if (!(await frontendSDK.wallet.exists())) {
@@ -27,12 +27,11 @@ export async function getOrCreateWallet() {
       });
     } else {
       address = await frontendSDK.wallet.getAddress({
-        blockchainId: "ethereumGoerli",
+        blockchainId: blockchainId,
       });
     }
 
-    console.log("A - " + address);
-    _waiting = "done";
+    _waiting = true;
 
     getUnityInstance().SendMessage("Canvas", "getOrCreateWallet_cb", address);
   }

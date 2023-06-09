@@ -4,3 +4,4 @@ fe/node_modules
 unity/example
 unity/example.tgz
 unity/deploy/*/
+fe/sec/tweedIntegration.js

@@ -1,13 +1,9 @@
 mergeInto(LibraryManager.library, {
-  GetOrCreateWallet: async function () {
-    address = await getOrCreateWallet();
-    console.log("B - " + address);
-  },
   ShowRecoveryPhrase: async function () {
     await showRecoveryPhrase();
   },
-  GetOrCreateWallet: async function () {
-    await getOrCreateWallet();
+  GetOrCreateWallet: async function (blockchainId) {
+    await getOrCreateWallet(UTF8ToString(blockchainId));
   },
   ShowRecoveryPhrase: async function () {
     await showRecoveryPhrase();

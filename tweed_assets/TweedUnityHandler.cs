@@ -8,7 +8,7 @@ using AOT;
 
 public static class TweedSdkImports {
     [DllImport("__Internal")]
-    public static extern string GetOrCreateWallet();
+    public static extern string GetOrCreateWallet(string blockchainId);
     [DllImport("__Internal")]
     public static extern string ShowRecoveryPhrase();
     [DllImport("__Internal")]
@@ -144,7 +144,7 @@ public class TweedUnityHandler : MonoBehaviour
 
     void btnCreateWalletOnClick() {
         Debug.Log("Inside btnCreateWalletOnClick");
-        TweedSdkImports.GetOrCreateWallet();
+        TweedSdkImports.GetOrCreateWallet(UTF8ToString("ethereumGoerli"));
         Debug.Log("after btnCreateWalletOnClick");
     }
 
