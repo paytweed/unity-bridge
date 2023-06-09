@@ -144,7 +144,7 @@ public class TweedUnityHandler : MonoBehaviour
 
     void btnCreateWalletOnClick() {
         Debug.Log("Inside btnCreateWalletOnClick");
-        TweedSdkImports.GetOrCreateWallet(UTF8ToString("ethereumGoerli"));
+        TweedSdkImports.GetOrCreateWallet("ethereumGoerli");
         Debug.Log("after btnCreateWalletOnClick");
     }
 
