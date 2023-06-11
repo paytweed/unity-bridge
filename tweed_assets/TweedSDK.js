@@ -54,15 +54,12 @@ export async function buyNft(nftId) {
   });
 }
 
-export async function showAddress() {
-  await frontendSDK.wallet.showAddress({ blockchainId: "ethereumGoerli" });
+export async function showAddress(blockchainId) {
+  await frontendSDK.wallet.showAddress({ blockchainId });
 }
 
-export async function signMessage() {
-  await frontendSDK.wallet.signMessage({
-    blockchainId: "ethereumGoerli",
-    message: "hello tweed",
-  });
+export async function signMessage(blockchainId, message) {
+  await frontendSDK.wallet.signMessage({ blockchainId, message });
 }
 
 export async function getRecoveryStatus() {

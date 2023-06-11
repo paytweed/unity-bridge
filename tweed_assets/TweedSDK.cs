@@ -18,9 +18,9 @@ public static class TweedSdkImports {
     [DllImport("__Internal")]
     public static extern string BuyNft(string nftId);
     [DllImport("__Internal")]
-    public static extern string ShowAddress();
+    public static extern string ShowAddress(string blockchainId);
     [DllImport("__Internal")]
-    public static extern string SignMessage();
+    public static extern string SignMessage(string blockchainId, string message);
     [DllImport("__Internal")]
     public static extern string GetRecoveryStatus();
     [DllImport("__Internal")]
@@ -162,7 +162,7 @@ public class TweedSDK : MonoBehaviour
 
     void btnShowQRCodeOnClick() {
         Debug.Log("Inside btnShowQRCodeOnClick");
-        TweedSdkImports.ShowAddress();
+        TweedSdkImports.ShowAddress("ethereumGoerli");
         Debug.Log("after btnShowQRCodeOnClick");
     }
 

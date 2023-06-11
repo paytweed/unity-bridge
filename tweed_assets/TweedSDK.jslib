@@ -17,11 +17,11 @@ mergeInto(LibraryManager.library, {
   BuyNft: async function (nftId) {
     await buyNft(UTF8ToString(nftId));
   },
-  ShowAddress: async function () {
-    await showAddress();
+  ShowAddress: async function (blockchainId) {
+    await showAddress(UTF8ToString(blockchainId));
   },
-  SignMessage: async function () {
-    await signMessage();
+  SignMessage: async function (blockchainId, message) {
+    await signMessage(UTF8ToString(blockchainId), UTF8ToString(message));
   },
   GetRecoveryStatus: async function () {
     await getRecoveryStatus();
