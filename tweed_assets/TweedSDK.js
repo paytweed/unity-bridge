@@ -48,9 +48,9 @@ export async function logout() {
   await frontendSDK.wallet.logout();
 }
 
-export async function buyNft() {
+export async function buyNft(nftId) {
   await frontendSDK.nft.buyWithFiat({
-    nftId: "1",
+    nftId,
   });
 }
 

@@ -16,7 +16,7 @@ public static class TweedSdkImports {
     [DllImport("__Internal")]
     public static extern string Logout();
     [DllImport("__Internal")]
-    public static extern string BuyNft();
+    public static extern string BuyNft(string nftId);
     [DllImport("__Internal")]
     public static extern string ShowAddress();
     [DllImport("__Internal")]
@@ -150,7 +150,7 @@ public class TweedSDK : MonoBehaviour
 
     void btnBuyNftOnClick() {
         Debug.Log("Inside btnBuyNftOnClick");
-        TweedSdkImports.BuyNft();
+        TweedSdkImports.BuyNft("1"); 
         Debug.Log("after btnBuyNftOnClick");
     }
 

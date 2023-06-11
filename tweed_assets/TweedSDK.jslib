@@ -14,8 +14,8 @@ mergeInto(LibraryManager.library, {
   Logout: async function () {
     await logout();
   },
-  BuyNft: async function () {
-    await buyNft();
+  BuyNft: async function (nftId) {
+    await buyNft(UTF8ToString(nftId));
   },
   ShowAddress: async function () {
     await showAddress();
