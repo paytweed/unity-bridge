@@ -10,7 +10,7 @@ npm install
 ```
 
 ```js
-npm deploy
+npm run deploy
 ```
 
 Open the unity example from: ./unity/example
