@@ -63,9 +63,9 @@ async function start() {
   readUnityData();
 
   const sdk = await TweedBackendSDK.setup({
-    apiKey: "lpXEHzanN27uJdqdAT6z9MjkXxwR42Gx",
+    apiKey: "lPIW0PlyAWLXd7FhbddooSF0Rm3A5Oa8",
     apiSecret:
-      "fmaCOxvVBKjDHLaZMQbHWNuavNNb5hCDXwodtFHsd7DYhZzF1gEeAuMnYJNZxiwN",
+      "cilhtsE7bci5iVJ4q0WxfXzxO7qeWvf6gWvdKbj8J7S_QKUJhNvl6RDrDcRsZ42N",
     callbacks: { getNftPurchaseData },
     defaultBlockchainIds: ["tezosGhost", "polygonMumbai", "ethereumGoerli"],
   });

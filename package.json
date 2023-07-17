@@ -11,7 +11,7 @@
     "compress": "cd ./unity && tar -cvjf example.tar.bz2 ./example/* && split -b 50M example.tar.bz2 example.tar.bz2.part && rm -f example.tar.bz2"
   },
   "dependencies": {
-    "@paytweed/backend-sdk": "^0.18.0",
+    "@paytweed/backend-sdk": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
